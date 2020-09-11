@@ -1,5 +1,30 @@
-@tailwind base;
+/* Global Styles */
 
-@tailwind components;
- 
-@tailwind utilities;
+/* need to add some normalising css + 
+/* add whole body styles for colour + text + text sizes etc.
+
+
+/* Main Styles */
+
+.intro {
+   height: 60vh;
+   display: flex;
+   flex-direction: column;
+   max-width: 1440px;
+   padding: 120px 100px;
+   margin: 0px auto;
+}
+
+.intro_hello {
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.intro_tagline {
+    font-weight: 300;
+}
+
+.intro_links {
+    font-weight: 100;
+}
+
