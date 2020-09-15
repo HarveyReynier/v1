@@ -1,6 +1,14 @@
 /* --- STYLES --- */
 /* search for --- when lookin for specific sections. */
 
+/* --- Colour theme --- */
+/* 
+background:  #edf2f4;
+text:   #042D42;
+title/highlight: #BA3F1D;
+alt background:  #D9E4E8; #8D99AE;
+
+
 /* --- Global//Reset Styles --- */
 
 body, html {
@@ -86,15 +94,16 @@ h1, h2, h3 {
 
 
 .section-title {
-	-ms-flex-negative: 0;
 	flex-shrink: 0;
-	width: 200px;
-	margin-right: 70px;
+	/*width: 200px;
+	margin-right: 70px;*/
 	color: #BA3F1D;
 	text-transform: uppercase;
 	text-align: left;
 	font-weight: 700;
-	letter-spacing: 2px
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    margin-block-end: 1em;
 }
 
 /* --- Utilities --- */
@@ -182,5 +191,16 @@ h1, h2, h3 {
 
 .about {
     flex-direction: column;
+    background-color: #D9E4E8;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+.about-content { 
+    flex: 1 1 150px;
     
 }
