@@ -152,7 +152,7 @@ h1, h2, h3 {
 }
 
 .wave {
-    background-image: url(../img/wave.png);
+    background-image: url(../img/Emojis/wave.png);
     margin-left: 15px;
     cursor: pointer;
     width: 40px;
@@ -178,7 +178,7 @@ h1, h2, h3 {
 }
 
 .call-me {
-    background-image: url(../img/callme.png);
+    background-image: url(../img/Emojis/callme.png);
     margin-left: 10px;
     vertical-align: sub;
     cursor: pointer;
@@ -197,10 +197,18 @@ h1, h2, h3 {
 .about-container {
     display: flex;
     flex-wrap: wrap-reverse;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .about-content { 
     flex: 1 1 150px;
-    
+}
+
+.profile-pic {
+    max-width: 400px;
+    height: auto;
+}
+
+.about-text {
+    flex-grow: 4;
 }
