@@ -5,7 +5,7 @@
 
 body, html {
     width: 100%;
-    background-color: rgb(255,255,255);
+    background-color: #F6F6F3;
     color: rgb(67, 73, 77);
 
 }
@@ -47,7 +47,10 @@ h1, h2, h3 {
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+
 }
+
+/* --- Utilities --- */
 
 .emoji {
     display: inline-block;
@@ -59,36 +62,38 @@ h1, h2, h3 {
 /* --- Intro/Header ---*/
 
 .intro {
-   height: 80vh;
+   height: 100vh;
    display: flex;
    flex-direction: column;
    max-width: 1440px;
-   padding: 120px 100px;
+   padding: 160px 133px;
    margin: 0px auto;
+   justify-content: space-around;
 }
 
 .hello {
     font-weight: 500;
-    font-size: 2.5em;
+    font-size: 2.8125em; /* 45px */
     font-family: 'Playfair Display', serif;
-    font-style: italic;
 }
 
 .wave {
     background-image: url(../img/wave.png);
-    margin-left: 10px;
+    margin-left: 15px;
     cursor: pointer;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
 }
 
 .tagline {
     font-weight: 500;
-    font-size: 1.4em;
+    font-size: 2.1875em; /* 35px */
+    flex-grow: 3;
+    max-width: 700px;
 }
 
 .tagline .name {
-    font-style: oblique;
+    font-weight: 700;
 }
 
 .intro_links {
