@@ -284,3 +284,51 @@ a {
     font-size: 1.2em;
 }
 
+/* --- Featured Projects ---*/
+
+.featured-projects {
+    flex-direction: column;
+    padding: 100px 15%;
+    background-color: #CFD4DE;
+}
+.featured-projects .project {
+	display: flex;
+	margin-bottom: 100px;
+	width: 125%
+}
+
+.featured-projects .project-pic {
+    max-width: 650px;
+	overflow: visible;
+	margin: 0
+}
+
+.featured-projects .project-pic a {
+    display: block;
+}
+
+.featured-projects .project-pic img {
+	width: 100%;
+	max-width: 100%;
+	vertical-align: bottom
+}
+
+.featured-projects .project-caption {
+	width: 140px;
+	flex-shrink: 0;
+	margin-left: 30px
+}
+
+.featured-projects .project-name {
+	margin-bottom: 15px
+}
+
+.featured-projects .project-name a {
+	font-weight: 700
+}
+
+.featured-projects .project p {
+	font-size: .9em;
+	line-height: 1.5
+}
+
