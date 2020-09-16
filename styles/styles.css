@@ -265,3 +265,22 @@ a {
     height: auto;
 }
 
+/* --- Skills --- */
+
+.skills {
+    flex-direction: column;
+    padding: 100px 15%;
+}
+
+.skill-row {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.skill-name {
+    text-transform: uppercase;
+	text-align: left;
+	font-weight: 700;
+    font-size: 1.2em;
+}
+
