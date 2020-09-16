@@ -332,3 +332,129 @@ a {
 	line-height: 1.5
 }
 
+/* --- Other Projects --- */
+.other-projects {
+    flex-direction: column;
+    padding: 100px 15%;
+}
+
+.other-projects .project {
+	max-width: 600px;
+	margin-bottom: 50px
+}
+
+.other-projects .project-name {
+	margin-bottom: 10px
+}
+
+.other-projects .project p {
+	font-size: .9em;
+	margin-bottom: 20px
+}
+
+.other-projects .project-skills-item {
+	display: inline-block;
+	margin: 3px 3px 3px 0;
+	font-family: Inconsolata,monospace;
+	font-size: .75em;
+	font-weight: 700;
+	padding: 2px 7px;
+	border-radius: 3px;
+	color: #007bff;
+	border: 1px solid #007bff;
+	background: 0 0
+}
+
+.other-projects .project-skills-item:first-of-type {
+	margin-left: 0
+}
+
+/* --- Footer --- */
+
+.footer {
+	padding: 50px 80px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+
+@media screen and (max-width:1024px) {
+	.footer {
+		padding: 50px
+	}
+}
+
+@media screen and (max-width:630px) {
+	.footer {
+		display: block
+	}
+}
+
+@media screen and (max-width:480px) {
+	.footer {
+		padding: 50px 30px
+	}
+}
+
+.copyright {
+	font-weight: 700;
+	width: 200px
+}
+
+@media screen and (max-width:630px) {
+	.copyright {
+		width: auto;
+		text-align: center;
+		margin-bottom: 25px
+	}
+}
+
+@media screen and (max-width:630px) {
+	.copyright .bottom,.copyright .top {
+		display: inline-block
+	}
+}
+
+@media screen and (max-width:480px) {
+	.copyright .bottom,.copyright .top {
+		display: block
+	}
+}
+
+@media screen and (max-width:630px) {
+	.footer-links {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center
+	}
+}
+
+.footer-links a {
+	position: relative;
+	display: inline-block;
+	/*color: #007bff!important;
+	text-transform: uppercase;
+	font-weight: 700;*/
+	margin: 0 15px;
+	outline: 0
+}
+
+@media screen and (max-width:1024px) {
+	.footer-links a {
+		margin: 0 10px
+	}
+}
+
+.footer-links i {
+	display: inline-block;
+	width: 60px
+}
