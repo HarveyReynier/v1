@@ -19,6 +19,11 @@ body, html {
     color: #042D42;
 
 }
+
+/* Selection Styling */
+::selection {
+    background-color: #82D173;
+}
 /* box sizing border-box for all elements */
 *,
 *::before,
@@ -66,31 +71,31 @@ h1, h2, h3 {
     padding: 100px 170px;
 }
 
-/*
+
 @media screen and (max-width:1280px) {
 	.section {
-		padding: 100px
+		padding: 100px;
 	}
 }
 
 @media screen and (max-width:1024px) {
 	.section {
-		padding: 50px
+		padding: 50px;
 	}
 }
 
 @media screen and (max-width:768px) {
 	.section {
-		display: block
+		display: block;
 	}
 }
 
 @media screen and (max-width:480px) {
 	.section {
-		padding: 50px 35px
+		padding: 50px 35px;
 	}
 }
-*/
+
 
 
 .section-title {
@@ -102,6 +107,13 @@ h1, h2, h3 {
     letter-spacing: 3px;
     font-size: 1.8em;
     margin-block-end: 1em;
+}
+
+
+@media screen and (max-width: 768px) {
+    .section-title {
+        width: auto;
+    }
 }
 
 .row {
@@ -131,6 +143,10 @@ a {
 	color: inherit
 }
 
+strong {
+    font-weight: 700;
+}
+
 .emoji {
     display: inline-block;
     background-size: contain;
@@ -155,6 +171,7 @@ a {
     background-color: #E6EEF0;
 }
 
+/* Animated link on hover utility */
 .section .underline-link {
 	position: relative;
 	display: inline-block
@@ -197,6 +214,24 @@ a {
    justify-content: space-around;
 }
 
+@media screen and (max-width: 768px){
+    .intro {
+        padding: 120px 70px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .intro {
+        padding: 120px 50px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .intro {
+        padding: 70px 50px;
+    }
+}
+
 .hello {
     font-weight: 500;
     font-size: 2em;
@@ -221,6 +256,72 @@ a {
     margin-block-end: 0.2em;
 }
 
+@media screen and (max-width: 1024px){
+    .hello {
+        font-size: 2.75em;
+    }
+    .tagline {
+        font-size: 2em;
+    }
+    .wave {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .hello {
+        font-size: 2.5em;
+        margin-block-end: 0em;
+    }
+    .tagline {
+        font-size: 1.75em;
+    }
+    .wave {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .hello {
+        font-size: 2.25em;
+        margin-block-end: 0em;
+    }
+    .tagline {
+        font-size: 1.5em;
+        margin-block-start: 0em;
+    }
+    .wave {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .hello {
+        font-size: 2em;
+        margin-block-end: 0em;
+    }
+    .tagline {
+        font-size: 1.25em;
+        margin-block-start: 0em;
+    }
+    .wave {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .hello {
+        font-size: 1.9em;
+    }
+    .tagline {
+        font-size: 1.2em;
+    }
+}
+
 .tagline .name {
     font-weight: 700;
 }
@@ -237,6 +338,17 @@ a {
     cursor: pointer;
     width: 35px;
     height: 35px;
+}
+
+@media screen and (max-width: 550px){
+    .intro_links {
+        font-size: 1em;
+    }
+
+    .call-me {
+        width: 25px;
+        height: 25px;
+    }
 }
 
 
@@ -261,8 +373,119 @@ a {
 }
 
 #profile-pic {
-    max-width: 350px;
+    max-width: 400px;
     height: auto;
+}
+
+@media screen and (max-width: 1280px){
+    #profile-pic {
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 880px){
+    #profile-pic {
+        max-width: 325px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #profile-pic {
+        clip-path: circle(30% at 38.5% 35%);
+        /*clip-path: inset(80px 40px 120px 20px);*/
+        max-width: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-row {
+        flex-direction: column-reverse;
+    }
+
+    .about-row .row-item:last-child{
+        margin-top: -10%;
+        margin-bottom: -33%;
+        margin-left: 15%;
+        margin-right: 0%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .about-row .row-item:last-child{
+        margin-bottom: -38%;
+    }
+
+    .about{
+        padding: 70px 50px;
+    }
+
+    .about-text{
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .about-text{
+        max-width: 375px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .about{
+        padding: 50px 25px;
+    }
+    .about-text{
+        max-width: 350px;
+        font-size: 15rem;
+    }
+
+    #profile-pic {
+        max-width: 375px;
+        margin-left: 6%;
+    }
+
+    .about-row .row-item:last-child{
+        margin-bottom: -45%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .about{
+        padding: 50px 25px;
+    }
+    .about-text{
+        max-width: 315px;
+        font-size: 15rem;
+    }
+
+    #profile-pic {
+        max-width: 325px;
+        margin-left: 7%;
+    }
+
+    .about-row .row-item:last-child{
+        margin-bottom: -45%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .about{
+        padding: 50px 25px;
+    }
+    .about-text{
+        max-width: 265px;
+        font-size: 14rem;
+    }
+
+    #profile-pic {
+        max-width: 270px;
+        margin-left: 7%;
+    }
+
+    .about-row .row-item:last-child{
+        margin-bottom: -45%;
+    }
 }
 
 /* --- Skills --- */
@@ -297,6 +520,26 @@ a {
 	width: 125%
 }
 
+@media screen and (max-width: 1280px){
+    .featured-projects .project {
+        width: 115%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .featured-projects .project {
+        width: 105%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .featured-projects .project {
+        width: 100%;
+        display: block;
+        margin-bottom: 70px;
+    }
+}
+
 .featured-projects .project-pic {
     max-width: 650px;
 	overflow: visible;
@@ -317,6 +560,14 @@ a {
 	width: 140px;
 	flex-shrink: 0;
 	margin-left: 30px
+}
+
+@media screen and (max-width:768px) {
+	.featured-projects .project-caption {
+		width: 100%;
+		margin-top: 25px;
+		margin-left: 0
+	}
 }
 
 .featured-projects .project-name {
