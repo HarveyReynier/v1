@@ -18,9 +18,10 @@
     <link href="styles/normalize.css" type="text/css" rel="stylesheet" /> <!--Normalize css-->
     <link href="styles/styles.css" type="text/css" rel="stylesheet" /> <!--Main styles css-->
     <script src="https://kit.fontawesome.com/70b09c7505.js" crossorigin="anonymous"></script> <!--Fontawesome-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--Animate-On-Scroll-->
 </head>
 <body>
-    <div class="nav-container">
+    <div class="nav-container" data-aos="fade-down" data-aos-anchor=".about">
         <nav class="nav">
             <input type="checkbox" id="nav-toggle" class="hidden">
             <label for="nav-toggle" class="nav-btn">
@@ -32,15 +33,15 @@
             <div class="nav-wrapper">
                 <ul>
                     <li>
-                        <a class="underline-link" href="">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
 
                     <li>
-                        <a class="underline-link" href="">Skills</a>
+                        <a class="nav-link" href="#skills">Skills</a>
                     </li>
 
                     <li>
-                        <a class="underline-link" href="">Projects</a>
+                        <a class="nav-link" href="#featured">Projects</a>
                     </li>
                 </ul>
             </div>
@@ -70,7 +71,7 @@
         </h3>
     </header>
 
-    <section class="section about">
+    <section class="section about" id="about">
         <div class="section-title">Who am I?</div>
         <div class="row about-row">
             <div class="row-item about-text">
@@ -93,7 +94,7 @@
 
     </section>
 
-    <section class="section skills">
+    <section class="section skills" id="skills">
         <div class="section-title">My Skills</div>
         <div class="row skill-row">
             <div class="skills-category">
@@ -132,7 +133,7 @@
         </div>
     </section>
 
-    <section class="section featured-projects">
+    <section class="section featured-projects" id="featured">
         <div class="section-title">Featured Projects</div>
         <div class="row featured-row">
             <div class="project webVR">
@@ -222,6 +223,7 @@
     </footer>
 
     <!--Scripts-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>
