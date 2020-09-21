@@ -69,3 +69,37 @@ topButton.addEventListener('click', () => {
         behavior: 'smooth', // or can get `auto` variable
       });
 })
+
+// Add animation on hover to emoji elements
+
+const emojiWave = document.querySelector('.wave');
+const emojiCall = document.querySelector('.call-me');
+
+// On page load, animate the waving hand.
+
+function waveOnLoad() {
+    emojiWave.classList.add('emoji-shake');
+    setTimeout(function() {
+      emojiWave.classList.remove('emoji-shake');
+    }, 2000);
+}
+
+setTimeout(function() {
+    waveOnLoad();
+}, 1000);
+
+emojiWave.addEventListener('mouseover', () => {
+    emojiWave.classList.add('emoji-shake');
+})
+
+emojiCall.addEventListener('mouseover', () => {
+    emojiCall.classList.add('emoji-shake');
+})
+
+emojiWave.addEventListener('mouseout', () => {
+    emojiWave.classList.remove('emoji-shake');
+})
+
+emojiCall.addEventListener('mouseout', () => {
+    emojiCall.classList.remove('emoji-shake');
+})
