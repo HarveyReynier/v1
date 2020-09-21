@@ -338,8 +338,9 @@ nav ul li a {
 /* For mobile screens and smaller, the nav transforms into an expandable menu item. */
 
 @media screen and (max-width: 864px) {
-    .logo {
-        padding: 0;
+    .nav-container {
+        position: relative;
+        background-color: transparent;
     }
 
     .nav-wrapper {
@@ -429,10 +430,11 @@ nav ul li a {
         margin-top: 4.5px;
     }
 
-    .nav-container {
+    /*.nav-container {
         background-color: transparent;
         height: 100vh;
-    }
+        z-index: -3;
+    }*/
 }
 
 /* Logo/Brand home icon */
