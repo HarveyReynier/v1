@@ -58,3 +58,14 @@ window.addEventListener('resize', () => {
 
 })
 
+// When clicking on the top button scroll to top of page.
+
+const topButton = document.getElementById('top-button');
+
+topButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth', // or can get `auto` variable
+      });
+})
