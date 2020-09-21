@@ -10,16 +10,24 @@ AOS.init();
 let width1 = window.innerWidth || document.documentElement.clientWidth || 
 document.body.clientWidth;
 
+// Define function that clicks the nav-toggle toggle button.
+let clickNavToggle = function() {
+    document.getElementById('nav-toggle').click()
+    console.log('clicked');
+}
+
+// If the window width is less or equal to 864 px (e.g. mobile nav menu), attach event listener to nav links
+// that closes the menu when clicked.
 if (width1 <= 864){
     let navLinks= document.querySelectorAll('.nav-link');
     navLinks.forEach( (el) => {
         el.classList.add('nav-toggle-event');
-        el.addEventListener('click', () => {
-            document.getElementById('nav-toggle').click()
-        })
+        el.addEventListener('click', clickNavToggle);
     })
 }
 
+// If the screen is resized into mobile width, attach the same event listener. If it is resized above, remove
+// that event lsitener.
 window.addEventListener('resize', () => {
     let width = window.innerWidth || document.documentElement.clientWidth || 
     document.body.clientWidth;
@@ -32,18 +40,20 @@ window.addEventListener('resize', () => {
             if(el.classList.contains('nav-toggle-event')){}
             else{
                 el.classList.add('nav-toggle-event');
-                el.addEventListener('click', () => {
-                    document.getElementById('nav-toggle').click()
-                })
+                el.addEventListener('click', clickNavToggle);
             }
            
         })
     }
     else {
-        if(el.classList.contains('nav-toggle-event')){
-            el.removeEventListener()
-        }
-
+        let navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach( (el) => {
+            if (el.classList.contains('nav-toggle-event')){
+                el.classList.remove('nav-toggle-event');
+                console.log('removing event lsternr')
+                el.removeEventListener('click', clickNavToggle);
+            }
+        })
     }
 
 })
