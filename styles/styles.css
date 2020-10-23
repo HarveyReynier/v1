@@ -835,7 +835,7 @@ nav ul li a {
 }
 
 .featured-projects .project-caption {
-	width: 155px;
+	width: 200px;
 	flex-shrink: 0;
 	margin-left: 30px
 }
