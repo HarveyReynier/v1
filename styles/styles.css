@@ -209,6 +209,62 @@ strong {
     background-color: #E6EEF0;
 }
 
+.highlight-link {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+    text-decoration: none;
+    -webkit-box-shadow: inset 0 -3px 0 #BA3F1D;
+    box-shadow: inset 0px 0px 0 #BA3F1D;
+}
+
+.highlight-link:focus,.highlight-link:hover {
+    -webkit-transition: all .2s cubic-bezier(0.42, 0, 0, 0.98);
+    transition: all .2s cubic-bezier(0.42, 0, 0, 0.98);
+    box-shadow: inset 165px 0 0 #BA3F1D;
+    color: #edf2f4;
+}
+
+.external-link {
+    -webkit-transition: all .2s cubic-bezier(0.42, 0, 0, 0.98);
+    transition: all .2s cubic-bezier(0.42, 0, 0, 0.98);
+    font-weight: 700;
+    
+    background-color: transparent;
+    white-space: nowrap;
+}
+
+.external-link::after {
+    -webkit-transition: all .2s cubic-bezier(0.42, 0, 0, 0.98);
+    transition: all .2s cubic-bezier(0.42, 0, 0, 0.98);
+    position: relative;
+    bottom: 2px;
+    margin-left: 15px;
+    content: '';
+    background: url(../img/icons/external-link.svg) no-repeat center;
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.external-link:focus:after, .external-link:hover:after {
+	margin-left: 15px;
+	-webkit-transform: translateX(5px);
+	transform: translateX(5px)
+}
+
+#resume-link {
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+#resume-link::after {
+    width: 25px;
+    height: 25px;
+}
+
 /* Animated link on hover utility */
 .section .underline-link {
 	position: relative;
