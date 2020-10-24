@@ -229,9 +229,7 @@ strong {
     -webkit-transition: all .2s cubic-bezier(0.42, 0, 0, 0.98);
     transition: all .2s cubic-bezier(0.42, 0, 0, 0.98);
     font-weight: 700;
-    
     background-color: transparent;
-    white-space: nowrap;
 }
 
 .external-link::after {
@@ -258,6 +256,7 @@ strong {
 #resume-link {
     display: inline-block;
     font-size: 1.2em;
+    white-space: nowrap;
 }
 
 #resume-link::after {
@@ -828,11 +827,38 @@ nav ul li a {
     justify-content: space-between;
 }
 
+.skills-category {
+    margin-bottom: 25px
+}
+
 .skill-name {
     text-transform: uppercase;
 	text-align: left;
 	font-weight: 700;
     font-size: 1.2em;
+}
+
+.skills-category ul{
+    padding-top: 5px;
+}
+
+.skills-category ul:first-child{
+    padding-top: 8px;
+}
+
+@media screen and (max-width: 768px){
+    .skills-category {
+        width: 47%;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .skills-category {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
 }
 
 /* --- Featured Projects ---*/
